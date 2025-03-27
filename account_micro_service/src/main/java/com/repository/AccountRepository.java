@@ -12,5 +12,5 @@ public interface AccountRepository extends JpaRepository<Account, Integer> {
 	// custom query based upon non-primary key, we find account details
 
 	@Query("select account.accno from Account account where account.emailid=:emalilId")
-	public int findAccountNumber(@Param("emalilId") String emalilId);
+	public int findAccountNumber(@Param("emalilId") String emailId);
 }
