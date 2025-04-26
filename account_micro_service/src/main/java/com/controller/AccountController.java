@@ -14,8 +14,8 @@ import com.bean.Account;
 import com.service.AccountService;
 
 @RestController
-@RequestMapping("account") // http://localhost:8383/account/*
-public class AccountController { // // http://localhost:8383/transaction/*
+@RequestMapping("account") // http://localhost:8383/account/*  main url path starts with account/ followed by sub-domains
+public class AccountController { 
 
 	@Autowired
 	AccountService accountService;
